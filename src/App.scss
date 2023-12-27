@@ -1,0 +1,316 @@
+/* sidebar */
+.left-sidebar {
+    .sidebar {
+        position: sticky;
+        top: 0;
+        /* left: 0; */
+        /* bottom: 0; */
+        /* width: 21%; */
+        height: 100vh;
+        padding: 0 10px;
+        overflow: hidden;
+        background: rgba(251, 251, 251, 1);
+    }
+
+    .sidebar-toogle-container {
+        display: flex;
+        justify-content: flex-start;
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    #sidebar-toogle {
+        padding: 0.3em;
+        cursor: pointer;
+    }
+
+    /* Expand Sidebar */
+    .sidebar.expand-sidebar {
+        width: 80px;
+    }
+
+    .sidebar.expand-sidebar .sidebar-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar .logo {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .sidebar ul li span {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(16, 24, 40, 1);
+    }
+
+    .sidebar ul li:hover {
+        background: rgba(226, 232, 240, 1);
+        border-radius: 5px;
+    }
+
+    .sidebar ul li:active {
+        background: rgba(101, 165, 168, 1);
+        color: white;
+    }
+
+    .sidebar ul .logout {
+        margin-top: 65px;
+    }
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    background: rgba(245, 247, 247, 1);
+    /* background: rgba(0, 0, 0, 0.1); */
+}
+
+.right-header {
+    .header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        background: rgba(251, 251, 251, 1);
+        padding: 7px;
+        /* margin-bottom: 1rem; */
+    }
+
+    .header .bell-icon {
+        background: #EFF4FB;
+        border-radius: 50%;
+        padding: 5px 10px;
+    }
+
+    .header .dropdown {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .header .dropdown .dropdown-menu {
+        background: rgba(251, 251, 251, 1);
+
+    }
+}
+
+.store-overview {
+    .store-name h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .overview {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .upcomming .card-body-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .upcomming .weeks button {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .inner-card {
+        background: rgba(235, 240, 239, 1);
+        width: 100%;
+        border-radius: 6px;
+        align-items: center;
+    }
+
+    .inner-card h5 {
+        font-family: "Poppins", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .inner-card p {
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.alerts {
+    .overview {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .upcomming table thead tr th {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .upcomming table tbody tr td {
+        font-family: "Roboto", sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .progress-circle {
+        position: relative;
+        display: inline-block;
+        margin: 1rem;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #ebebeb;
+    }
+
+    .progress-circle:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        -webkit-animation: colorload 2s;
+        animation: colorload 2s;
+    }
+
+    .progress-circle span {
+        font-size: 1rem;
+        color: #8b8b8b;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin-left: -30px;
+        margin-top: -30px;
+        text-align: center;
+        border-radius: 50%;
+        background: #fff;
+        z-index: 1;
+    }
+
+
+    .progress-circle.progress-30:after {
+        background-image: linear-gradient(90deg,
+                #ebebeb 50%,
+                transparent 50%,
+                transparent),
+            linear-gradient(198deg, rgba(229, 145, 71, 1) 50%, rgba(229, 145, 71, 1) 50%, rgba(229, 145, 71, 1));
+    }
+
+    .progress-circle.progress-100:after {
+        background: rgba(203, 81, 81, 1);
+        /* background-image: linear-gradient(90deg,
+            #66b8ff 50%,
+            transparent 50%,
+            transparent),
+          linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); */
+    }
+
+
+
+    @-webkit-keyframes colorload {
+        0% {
+            opacity: 0;
+            transform: rotate(0deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.financial {
+    .store-name h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .overview {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .upcomming .card-body-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .upcomming .weeks button {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .inner-card {
+        background: rgba(235, 240, 239, 1);
+        width: 100%;
+        border-radius: 6px;
+        align-items: center;
+    }
+
+    .inner-card h5 {
+        font-family: "Poppins", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .inner-card p {
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}

@@ -5,7 +5,7 @@
         top: 0;
         /* left: 0; */
         /* bottom: 0; */
-        /* width: 21%; */
+        // width: 100%;
         height: 100vh;
         padding: 0 10px;
         overflow: hidden;
@@ -25,17 +25,17 @@
     }
 
     /* Expand Sidebar */
-    .sidebar.expand-sidebar {
-        width: 80px;
-    }
+    // .sidebar.expand-sidebar {
+    //     width: 80px;
+    // }
 
-    .sidebar.expand-sidebar .sidebar-items {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    // .sidebar.expand-sidebar .sidebar-items {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
 
-    .sidebar .logo {
+    .logo {
         font-family: "Poppins", sans-serif;
         font-size: 18px;
         font-weight: 600;
@@ -43,23 +43,26 @@
         text-align: left;
     }
 
-    .sidebar ul li span {
+    li span {
         font-family: "Inter", sans-serif;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0em;
         text-align: left;
         color: rgba(16, 24, 40, 1);
-    }
+    }   
 
-    .sidebar ul li:hover {
+    a:hover {
         background: rgba(226, 232, 240, 1);
         border-radius: 5px;
+        color: black;
+        width: 100%;
     }
 
-    .sidebar ul li:active {
+    .active {
         background: rgba(101, 165, 168, 1);
+        border-radius: 5px;
         color: white;
     }
 

@@ -1,31 +1,32 @@
 import React, { useState } from 'react'
 import { HiBars3, RiApps2Line } from "react-icons/hi2";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
-    const[isOpen ,setIsOpen]=useState(true);
-    const toogle = () => setIsOpen (!isOpen);
+    const [isOpen, setIsOpen] = useState(true);
+    const toogle = () => setIsOpen(!isOpen);
 
     return (
         <div className='left-sidebar'>
-            <div style={{width: isOpen ? "200px" : "50px"}} className="p-3 sidebar" id="mySidebar">
+            <div style={{ width: isOpen ? "200px" : "50px" }} className="p-3 sidebar" id="mySidebar">
                 <div className="sidebar-toogle-container">
                     <span id="sidebar-toogle" role="button">
-                    <HiBars3    onClick={toogle}/>
+                        <HiBars3 onClick={toogle} />
                     </span>
                 </div>
-                <div className="logo border-bottom text-center pt-3 pb-4" style={{display: isOpen ? "block" : "none"}}>Logo</div>
+                <div className="logo border-bottom text-center pt-3 pb-4" style={{ display: isOpen ? "block" : "none" }}>Logo</div>
                 <ul className="list-unstyled p-3 ps-0">
                     <li className="p-2 ps-0 mt-4 text">
-                        <a href="#" className="text-decoration-none d-flex p-2 ps-0 active">
+                        <Link to="/ " className="text-decoration-none d-flex p-2 ps-0 active">
                             <img src="Assets/Dashboard.svg" alt="" className="pe-3" />
                             Dashboard
-                        </a>
+                        </Link>
                     </li>
                     <li className="p-2 ps-0 mt-4">
-                        <a href="inventory.html" className="text-decoration-none d-flex">
+                        <Link to="/Inventory" className="text-decoration-none d-flex p-2 ps-0">
                             <img src="Assets/Inventory.svg" className="pe-3" alt="" />
                             <span>Inventory</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="p-2 ps-0 mt-4">
                         <a href="#" className="text-decoration-none d-flex">
